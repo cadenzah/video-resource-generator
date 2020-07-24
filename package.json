@@ -1,0 +1,19 @@
+{
+  "name": "video-resource-generator",
+  "version": "1.0.0",
+  "description": "Generate an image sprite and a preview thumbnail clip of a video content",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cadenzah/video-resource-generator.git"
+  },
+  "author": "cadenzah",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cadenzah/video-resource-generator/issues"
+  },
+  "homepage": "https://github.com/cadenzah/video-resource-generator#readme"
+}
