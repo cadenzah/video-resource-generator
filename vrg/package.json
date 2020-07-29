@@ -1,0 +1,34 @@
+{
+  "name": "vrg",
+  "version": "1.0.0",
+  "description": "Meta-Resource generator from original video sources",
+  "main": "build/index.js",
+  "scripts": {
+    "start": "node build",
+    "build-watch": "npx tsc -w",
+    "test": "npx jest --coverage",
+    "test-watch": "npx jest --watch --coverage"
+  },
+  "author": "cadenzah",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^26.0.7",
+    "jest": "^26.1.0",
+    "ts-jest": "^26.1.4",
+    "typescript": "^3.9.7"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "testRegex": "\\.test\\.ts$",
+    "moduleFileExtensions": [
+      "ts", "js"
+    ],
+    "globals": {
+      "ts-jest": {
+        "enableTsDiagnostics": true
+      }
+    }
+  }
+}
