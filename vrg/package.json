@@ -6,11 +6,29 @@
   "scripts": {
     "start": "node build",
     "build-watch": "npx tsc -w",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx jest --coverage",
+    "test-watch": "npx jest --watch --coverage"
   },
   "author": "cadenzah",
   "license": "MIT",
   "devDependencies": {
+    "@types/jest": "^26.0.7",
+    "jest": "^26.1.0",
+    "ts-jest": "^26.1.4",
     "typescript": "^3.9.7"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "testRegex": "\\.test\\.ts$",
+    "moduleFileExtensions": [
+      "ts", "js"
+    ],
+    "globals": {
+      "ts-jest": {
+        "enableTsDiagnostics": true
+      }
+    }
   }
 }
