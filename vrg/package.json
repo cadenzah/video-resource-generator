@@ -1,0 +1,16 @@
+{
+  "name": "vrg",
+  "version": "1.0.0",
+  "description": "Meta-Resource generator from original video sources",
+  "main": "build/index.js",
+  "scripts": {
+    "start": "node build",
+    "build-watch": "npx tsc -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "cadenzah",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^3.9.7"
+  }
+}
