@@ -4,10 +4,10 @@
   "description": "Meta-Resource generator from original video sources",
   "main": "build/index.js",
   "scripts": {
-    "start": "node build",
+    "start": "node build/src",
     "build-watch": "npx tsc -w",
-    "test": "npx jest --coverage",
-    "test-watch": "npx jest --watch --coverage"
+    "test": "npx jest --coverage --watchAll --detectOpenHandles --forceExit",
+    "test-watch": "npx jest --watch --coverage --detectOpenHandles --forceExit"
   },
   "author": "cadenzah",
   "license": "MIT",
@@ -17,13 +17,19 @@
     "ts-jest": "^26.1.4",
     "typescript": "^3.9.7"
   },
+  "dependencies": {
+    "@types/express": "^4.17.7",
+    "express": "^4.17.1"
+  },
   "jest": {
     "transform": {
       "^.+\\.ts$": "ts-jest"
     },
     "testRegex": "\\.test\\.ts$",
     "moduleFileExtensions": [
-      "ts", "js"
+      "ts",
+      "js",
+      "json"
     ],
     "globals": {
       "ts-jest": {
