@@ -2,9 +2,9 @@
   "name": "vrg",
   "version": "1.0.0",
   "description": "Meta-Resource generator from original video sources",
-  "main": "build/index.js",
+  "main": "build/src/server.js",
   "scripts": {
-    "start": "node build/src",
+    "start": "node build/src/server",
     "build-watch": "npx tsc -w",
     "test": "npx jest --coverage --watchAll --detectOpenHandles --forceExit",
     "test-watch": "npx jest --watch --coverage --detectOpenHandles --forceExit"

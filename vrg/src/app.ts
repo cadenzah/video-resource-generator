@@ -19,6 +19,7 @@ class App {
 
   public router(): void {
     const { app } = this;
+    this.testApi();
   }
 
   public testApi(): void {
