@@ -5,6 +5,7 @@
   "main": "build/src/server.js",
   "scripts": {
     "start": "node build/src/server",
+    "start-watch": "npx nodemon build/src/server",
     "build-watch": "npx tsc -w",
     "test": "npx jest --coverage --watchAll --detectOpenHandles --forceExit",
     "test-watch": "npx jest --watch --coverage --detectOpenHandles --forceExit"
@@ -14,6 +15,7 @@
   "devDependencies": {
     "@types/jest": "^26.0.7",
     "jest": "^26.1.0",
+    "nodemon": "^2.0.4",
     "supertest": "^4.0.2",
     "ts-jest": "^26.1.4",
     "typescript": "^3.9.7"
